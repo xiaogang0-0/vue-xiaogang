@@ -1,0 +1,4 @@
+1.基于vue-cli快速构建   https://www.jianshu.com/p/2769efeaa10a
+    1) npm install --global vue-cli   安装 （自己就是默认的全局安装）          
+    2) vue init webpack vuetest       切换到项目地址 使用命令创建项目
+    3)
