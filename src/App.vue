@@ -23,5 +23,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-p{ line-height: 50px; }
+p{ line-height: 40px; }
 </style>
