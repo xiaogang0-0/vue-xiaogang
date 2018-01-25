@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Home from '@/components/Home'
-import Home from '@/pages/status'
+import Home from '@/components/Home'
+// import Home from '@/pages/status'
 Vue.use(Router)
 
 export default new Router({

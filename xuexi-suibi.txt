@@ -9,3 +9,26 @@ bulid   里面是一些操作文件，使用npm run *    时其实执行的就是这里的文件
 config 配置文件，执行文件需要的配置信息
 
 src   资源文件，所有的组件以及所用的图片都是在这个放着的简单看一下这个文件夹下都放了那些东西
+
+
+
+vue-cli生成项目修改之后编译报错
+	https://segmentfault.com/q/1010000006215850/a-1020000006218822
+
+	因为初始化项目的时候Use ESLint to lint your code? (Y/n) 默认下一步，就选了y，设置了eslint(esLint是一个QA工具，用来避免低级错误和统一代码的风格，使得代码有良好的规范，大多数问题是缩进不规范、不需要分号、多余的空格或空行等原因)。
+解决方法：若不希望有规范的js代码，可重新初始化将eslint关掉。在Use ESLint to lint your code? (Y/n) 这一步选项时选择no即可。
+
+	在webpack.base.conf.js里面删掉下面:
+
+	1） const createLintingRule = () => ({
+		  test: /\.(js|vue)$/,
+		  loader: 'eslint-loader',
+		  enforce: 'pre',
+		  include: [resolve('src'), resolve('test')],
+		  options: {
+		    formatter: require('eslint-friendly-formatter'),
+		    emitWarning: !config.dev.showEslintErrorsInOverlay
+		  }
+		})
+
+    2） ...(config.dev.useEslint ? [createLintingRule()] : []),
