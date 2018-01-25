@@ -4,14 +4,44 @@
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
 
-    <p>Datimer 2018-01-25 17:05:00 00</p>
+    <div class="block">
+      <span class="demonstration">默认为 Date 对象</span>
+      <div class="demonstration">组件值：{{ form.value10 }}</div>
+      <el-date-picker
+        v-model="form.value10"
+        type="date"
+        placeholder="选择日期"
+        format="yyyy 年 MM 月 dd 日">
+      </el-date-picker>
+    </div>
+    <div class="block">
+      <span class="demonstration">进行格式化</span>
+      <div class="demonstration">组件值：{{ form.value11 }}</div>
+      <el-date-picker
+        v-model="form.value11"
+        type="date"
+        placeholder="选择日期"
+        format="yyyy 年 MM 月 dd 日"
+        value-format="yyyy-MM-dd">
+      </el-date-picker>
+    </div>
   </div>
 </template>
 
+
+
 <script>
-export default {
-  name: 'App'
-}
+  export default {
+    name: 'App',
+    data() {
+      return {
+        form: {
+           value10: '0',
+           value11: '2',
+        }
+      };
+    }
+  };
 </script>
 
 <style>
