@@ -4,7 +4,7 @@
     <!-- <img src="./assets/logo.png"> -->
     <router-view/>
 
-    <p>my is add bottom</p>
+    <p>Datimer 2018-01-25 17:05:00 00</p>
   </div>
 </template>
 
