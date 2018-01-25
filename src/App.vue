@@ -23,6 +23,6 @@ export default {
   margin-top: 60px;
   background:url("./assets/home-bg01.jpg") no-repeat 0 0;
 }
-p{ line-height: 40px; }
+p{ line-height: 40px; color: #ccc; }
 
 </style>
