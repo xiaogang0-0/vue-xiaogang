@@ -82,8 +82,8 @@
           </el-table> -->
           <!-- 原有 -->
               <div id="app">
-                <img src="./assets/home-bg01.jpg">
-                <img src="./assets/logo.png">
+                <!-- <img src="./assets/home-bg01.jpg"> -->
+                <!-- <img src="./assets/logo.png"> -->
                 
                 
                 
