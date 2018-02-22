@@ -1,5 +1,5 @@
 <template>
-	<el-color-picker v-model="color3" show-alpha></el-color-picker>
+	<el-color-picker v-model="color3" show-alpha>1</el-color-picker>
 
 </template>
 
