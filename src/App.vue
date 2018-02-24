@@ -64,12 +64,12 @@
           <span>王小虎</span>
         </el-header>
         <!-- 面包屑 -->
-        <el-breadcrumb separator="/">
-                  <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-                  <el-breadcrumb-item>活动管理</el-breadcrumb-item>
-                  <el-breadcrumb-item>热门课程列表</el-breadcrumb-item>
-                  <el-breadcrumb-item>课程详情</el-breadcrumb-item>
-                </el-breadcrumb>
+        <el-breadcrumb separator="/" class="tables">
+          <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item>活动管理</el-breadcrumb-item>
+          <el-breadcrumb-item>热门课程列表</el-breadcrumb-item>
+          <el-breadcrumb-item>课程详情</el-breadcrumb-item>
+        </el-breadcrumb>
         <!-- 中间内容区域-->
         <el-main>
           <!-- <el-table :data="tableData">
@@ -81,13 +81,13 @@
             </el-table-column>
           </el-table> -->
           <!-- 原有 -->
-              <div id="app">
+              <!-- <div id="app"> -->
                 <!-- <img src="./assets/home-bg01.jpg"> -->
                 <!-- <img src="./assets/logo.png"> -->
                 
                 
                 
-                <el-tree
+               <!--  <el-tree
                   :data="data4"
                   :props="defaultProps"
                   show-checkbox
@@ -95,7 +95,7 @@
                   default-expand-all
                   :expand-on-click-node="false"
                   :render-content="renderContent">
-                </el-tree>
+                </el-tree> -->
 
                 <el-button :plain="true" @click="open">打开消息提示</el-button>
 
@@ -123,7 +123,7 @@
 
                 <router-view/>
                
-              </div>
+              <!-- </div> -->
           <!--  原有-->
 
         </el-main>
@@ -134,7 +134,7 @@
   </div>
 </template>
 
-<style>
+<style >
   .el-header {
     background-color: #B3C0D1;
     color: #333;
@@ -155,12 +155,21 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    background:url("./assets/home-bg01.jpg") no-repeat 0 0;
+    /*background:url("./assets/hengfu6.png") no-repeat 0 0;*/
+    background:url("./assets/banner1.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
   }
   p{ 
     line-height: 40px; 
     color: rgba(0,0,0,0.2); 
   }
+  .tables {
+    line-height: 40px;
+    padding-left: 10px;
+  }
+</style>
+<style scoped>
+  
 </style>
 
 <script>
