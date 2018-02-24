@@ -140,23 +140,27 @@
     color: #333;
     line-height: 60px;
   }
-  
   .el-aside {
     color: #333;
   }
-  body ,html, .el-container,#app{padding: 0; margin:0; width: 100%;
-    height: 100% !important;}
+  body ,html, .el-container,#app{
+    padding: 0; 
+    margin:0; 
+    width: 100%;
+    height: 100% !important;
+  }
   #app{
-   
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-  
     background:url("./assets/home-bg01.jpg") no-repeat 0 0;
   }
-  p{ line-height: 40px; color: rgba(0,0,0,0.2); }
+  p{ 
+    line-height: 40px; 
+    color: rgba(0,0,0,0.2); 
+  }
 </style>
 
 <script>
@@ -168,8 +172,8 @@
     data() {
       const item = {
         date: '2016-05-02',
-        name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        name: '学员1',
+        address: '海淀高中'
       };
       return {
         tableData: Array(20).fill(item),
@@ -197,7 +201,8 @@
           label: '一级 2',
           children: [{
             id: 5,
-            label: '二级 2-1'
+            label: '二级 2-1',
+            gender_name:'absolute'
           }, {
             id: 6,
             label: '二级 2-2'
