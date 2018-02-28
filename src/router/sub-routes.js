@@ -207,14 +207,6 @@ let subRoutes = [
         title: '教师课表',
         meta: { requiresAuth: true },
         component: resolve => require(['@/pages/teach/schedule'], resolve)
-    },
-    // 进出明细
-    {
-        path: '/teach-turnover',
-        name: 'teach-turnover',
-        title: '进出明细',
-        meta: { requiresAuth: true },
-        component: resolve => require(['@/pages/teach/turnover'], resolve)
     }
 
 ]
