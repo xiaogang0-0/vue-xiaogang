@@ -72,14 +72,14 @@
         </el-breadcrumb>
         <!-- 中间内容区域-->
         <el-main>
-          <!-- <el-table :data="tableData">
+          <el-table :data="tableData">
             <el-table-column prop="date" label="日期" width="140">
             </el-table-column>
             <el-table-column prop="name" label="姓名" width="120">
             </el-table-column>
             <el-table-column prop="address" label="地址">
             </el-table-column>
-          </el-table> -->
+          </el-table>
           <!-- 原有 -->
               <!-- <div id="app"> -->
                 <!-- <img src="./assets/home-bg01.jpg"> -->
@@ -136,7 +136,7 @@
 
 <style >
   .el-header {
-    background-color: #B3C0D1;
+    background-color: #00aaee;
     color: #333;
     line-height: 60px;
   }
@@ -155,8 +155,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    /*background:url("./assets/hengfu6.png") no-repeat 0 0;*/
-    background:url("./assets/banner1.jpg") no-repeat 0 0;
+    background:url("./assets/loginnewBg.png") no-repeat 0 0;
     background-size: 100% 100%;
   }
   p{ 
@@ -167,6 +166,10 @@
     line-height: 40px;
     padding-left: 10px;
   }
+  .el-header {
+   color:#fff; background: rgba(0,0,0,0.1);
+  }
+  .el-header .el-dropdown{color:#fff;}
 </style>
 <style scoped>
   
